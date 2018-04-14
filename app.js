@@ -4,7 +4,6 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-var appRoutes = require('./routes/app');
 const user = require('./routes/users');
 const upload = require('./routes/uploads');
 const dash = require('./routes/dashboard');
@@ -47,7 +46,6 @@ app.use(function (req, res, next) {
     next();
 });
 
-//app.use('/', appRoutes);
 app.use('/user', user );
 app.use('/upload', upload);
 app.use('/dashboard', dash);
