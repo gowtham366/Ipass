@@ -12,7 +12,9 @@ Router.post('/',function(req, res, next){
         field3: req.body.field3,
         field4: req.body.field4,
         field5: req.body.field5,
-        field6: req.body.field6
+        field6: req.body.field6,
+        lat: req.body.lat,
+        lon: req.body.lon
       });
 
       Api.update({_id: req.body.api},{$push: {fieldValues: fieldVal}}, function(error, result){
