@@ -17,7 +17,7 @@ Router.post('/',(req, res, next) => {
   var email = req.body.email;
   var len = email.length;
   len = len.toString();
-  var apiKey = "Ipass"+len+req.body.firstName.charAt(0)+req.body.lastName.charAt(0);
+  var apiKey = "IPASS"+len+req.body.firstName.charAt(0)+req.body.lastName.charAt(0).toUpperCase();
   var user = new User({
     _id: email,
     firstName: req.body.firstName,
