@@ -20,7 +20,7 @@ var user = new Schema({
     },
     lastName: {
       type: String,
-      required: true
+      default : null
     },
     password: {
       type: String,
