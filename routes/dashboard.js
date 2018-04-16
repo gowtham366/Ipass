@@ -34,6 +34,7 @@ Router.post('/display',function(req, res, next){
       });
     }
     else if (result) {
+      console.log(result);
       res.status(200).json({
           status: true,
           message: "Success!!!",
