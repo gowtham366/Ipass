@@ -14,8 +14,7 @@ Router.post('/',function(req, res, next){
         field5: req.body.field5,
         field6: req.body.field6,
         lat: req.body.lat,
-        lon: req.body.lon,
-        time: Date.now()
+        lon: req.body.lon
       });
 
       Api.update({_id: req.body.api},{$push: {fieldValues: fieldVal}}, function(error, result){
