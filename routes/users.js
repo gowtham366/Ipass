@@ -14,6 +14,7 @@ Router.post('/',(req, res, next) => {
   //
   // let password = encrypted;
 
+  console.log(req.body)
   var email = req.body.email;
   var len = email.length;
   len = len.toString();
