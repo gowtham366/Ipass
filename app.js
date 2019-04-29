@@ -16,7 +16,6 @@ const mongoose = require('mongoose');
 //mongoose.connect('mongodb://127.0.0.1:27017/ipass');
 mongoose.connect('mongodb://gowtham:dbpassword@ds014368.mlab.com:14368/ipass');
 
-
 mongoose.connection.on('connected', function () {
   console.log('DB connected!!!');
 });
